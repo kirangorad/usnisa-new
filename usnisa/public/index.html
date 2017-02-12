@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>USNISA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/> 
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Angular library -->
+    <script src="js/angular.min.js"></script>
+    <!-- <script src="js/angular-cookies.min.js"></script> -->
+    <!-- Angular Controller -->
+    <script src="controllers/mainController.js"></script>
+    <!-- Application Configurations -->
+    <script src="controllers/config.js"></script>
+
+</head>
+
+<body id="page-top" class="index" ng-controller="mainController">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/usnisaAssets/Usnisa-Logo-200-80_yellow.png" height="100%"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="">Our Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">                
+                            <li><a class="page-scroll" href="uHomes.html">Managed home rentals</a></li>
+                            <li><a class="page-scroll" href="uAssets.html">Property management</a></li>
+                            <li><a class="page-scroll" href="uSocial.html">Social media management</a></li>
+                            <li><a class="page-scroll" href="uRealtor.html">Brokerage</a></li>
+                        </ul>
+                        <!--<a class="page-scroll" href="#services">Our Services</a>-->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#our-team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header id="u-main">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in wow fadeInUp">Welcome To USNISA!</div>
+                <div class="intro-heading wow fadeInUp">SEARCH. SEE. LIVE. SOCIAL</div>
+                <a href="#about" class="page-scroll btn btn-xl wow fadeInUp">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow fadeInUp">
+                    
+                    <h2 class="section-heading">About Us</h2>
+                    
+                        <h3 class="text-justify">
+                        Based in Chennai, Usnisa is a broad based offline to online (O2O) services company. Our principle operations are in real estate (furnished home rentals, brokerage, property management) and in social media management. Usnisa is led by accomplished professionals, ex-bankers, and top business school alumni and is mentored by experienced real estate and technology experts.
+                        </h3>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow fadeInUp">
+                    <h2 class="section-heading">Our brands and services</h2>
+                    <h3 class="section-subheading text-muted">Take a look at our services</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 service-main wow fadeInUp">
+                    <a href="uHomes.html">
+                        <img src="img/usnisaAssets/U-Homes_256-256.png" height="100" width="100">
+                        <!--<span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa fa-home fa-stack-1x"></i>
+                        </span>-->
+                        <h4 class="service-heading">U-Homes</h4>
+                        <p class="text-muted">We offer affordable and fully furnished accommodation for urban youth working in the Chennai IT corridor</p>
+                    </a>
+                </div>
+                <div class="col-md-3 service-main wow fadeInUp">
+                    <a href="uAssets.html">
+                        <img src="img/usnisaAssets/U-Assets_256-256.png" height="100" width="100">
+                        <!--<span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-check fa-stack-1x"></i>
+                        </span>-->
+                        <h4 class="service-heading">U-Assets</h4>
+                        <p class="text-muted">Full service professional residential property management services in Chennai and the surrounding areas</p>
+                    </a>    
+                </div>
+                <div class="col-md-3 service-main wow fadeInUp">
+                    <a href="uSocial.html">
+                        <img src="img/usnisaAssets/U-Social_256-256.png" height="100" width="100">
+                        <!--<span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-info fa-stack-1x"></i>
+                        </span>-->
+                        <h4 class="service-heading">U-Social</h4>
+                        <p class="text-muted">Expert social media management company catering to the small and medium enterprises</p>
+                    </a>
+                </div>
+                <div class="col-md-3 service-main wow fadeInUp">
+                    <a href="uRealtor.html">
+                        <img src="img/usnisaAssets/U-Realtors_256-256.png" height="100" width="100">
+                        <!--<span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-plane fa-stack-1x"></i>
+                        </span>-->
+                        <h4 class="service-heading">U-Realtor</h4>
+                        <p class="text-muted">An offline to online (O2O) real estate platform to buy/sell and rent homes in Chennai</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center wow fadeInUp">
+                    <h2 class="section-heading">Meet Our Team</h2><br/>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-12 wow fadeInUp">
+                    <img src="img/team/1.png" class="img-circle" alt="Cinque Terre" width="100" height="100">
+                    <h3>Rajesh Soundararajan</h3>
+                    <h4>Founder & Managing Director</h4>
+                    <h5>15 years of experience in consulting and investment banking</h5>
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.linkedin.com/in/rajeshsoundararajan" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/_RAJE" target="_blank"><i class="fa fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--  <br/><br/>
+            <div class="row text-center">
+                <div class="col-md-4 wow fadeInUp">
+                    <img src="img/team/2.png" class="img-circle" alt="Cinque Terre" width="100" height="100">
+                    <h3>Anbalagan Anganan</h3>
+                    <h4>Property Manager</h4>
+                    <h5>Over 10 years of experience in real estate and debt collection</h5>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <img src="img/team/3.png" class="img-circle" alt="Cinque Terre" width="100" height="100">
+                    <h3>Mayangba Sangtam</h3>
+                    <h4>Data Analyst</h4>
+                    <h5>10 years of experience, manages day-to-day data administration activity</h5>
+                </div>
+                <div class="col-md-4 wow fadeInUp">
+                    <img src="img/team/4.png" class="img-circle" alt="Cinque Terre" width="100" height="100">
+                    <h3>Sumit Gupta</h3>
+                    <h4>Designer</h4>
+                    <h5>5 years experience, responsible for design and creative for sales and marketing initiatives</h5>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- Properties Section 
+    <section id="properties">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Latest Properties</h2>
+                    <h2 class="section-subheading text-muted">
+                        <p>
+                        Want to find property? Want to sell Property? Want to Rent Property? 
+                        Want to get more information about property market trends?  
+                        Many questions one stop solution.
+                        Browse the best property deals at your preferred location desired price with convenience of time.
+                        <a href="/property.html"><i class="fa fa-hand-o-right">&nbsp;&nbsp;<u>Click Here</u></i></a> to browse hot deals. 
+                        </p><br/>
+                        <a  class='btn btn-lg btn-primary' href="/property.html"><i class="fa fa-building"></i>&nbsp;&nbsp;Find Properties</a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- Process Section 
+    <section id="process">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How it works?</h2>
+                    <h3 class="section-subheading text-muted">Step by step guide</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline-v">
+                        <li>
+                            <div class="timeline-v-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-v-panel">
+                                <div class="timeline-v-heading">
+                                    <h4>Step 1</h4>
+                                    <h4 class="subheading">Step 1 Name</h4>
+                                </div>
+                                <div class="timeline-v-body">
+                                    <p class="text-muted">Step 1 Description in details</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-v-inverted">
+                            <div class="timeline-v-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-v-panel">
+                                <div class="timeline-v-heading">
+                                    <h4>Step 2</h4>
+                                    <h4 class="subheading">Step 2 Name</h4>
+                                </div>
+                                <div class="timeline-v-body">
+                                    <p class="text-muted">Step 2 Description in details</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-v-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-v-panel">
+                                <div class="timeline-v-heading">
+                                    <h4>Step 3</h4>
+                                    <h4 class="subheading">Step 3 Name</h4>
+                                </div>
+                                <div class="timeline-v-body">
+                                    <p class="text-muted">Step 3 Description in details</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-v-inverted">
+                            <div class="timeline-v-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-v-panel">
+                                <div class="timeline-v-heading">
+                                    <h4>Step 4</h4>
+                                    <h4 class="subheading">Step 4 Name</h4>
+                                </div>
+                                <div class="timeline-v-body">
+                                    <p class="text-muted">Step 4 Description in details</p>
+                                </div>
+                        </li>
+                        <li class="timeline-v-inverted">
+                            <div class="timeline-v-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading">What is in your mind? feel free to contact us or leave a message.</h3>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12 wow fadeInUp">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form class="contactform" name="userFeedbackForm" ng-submit="submitFeedBackForm()" novalidate>
+                                    <p class="form-group" ng-bind="headerFB"></p>
+                                    <!-- NAME -->
+                                    <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.name.$invalid && !userFeedbackForm.name.$pristine }">
+                                        <input type="text" name="name" class="form-control" ng-model="userFeedback.feedbackName" placeholder="Name *" required>
+                                        <p ng-show="userFeedbackForm.name.$invalid && !userFeedbackForm.name.$pristine" class="help-block">You name is required.</p>
+                                    </div>
+                                    <!-- EMAIL -->
+                                    <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.email.$invalid && !userFeedbackForm.email.$pristine }">
+                                        <input type="email" name="email" class="form-control" ng-model="userFeedback.feedbackEmail" placeholder="Email">
+                                        <p ng-show="userFeedbackForm.email.$invalid && !userFeedbackForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                                    </div>
+                                    <!-- SUBJECT -->
+                                    <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.subject.$invalid && !userFeedbackForm.subject.$pristine }">
+                                        <input type="text" name="subject" class="form-control" ng-model="userFeedback.feedbackSubject" placeholder="Subject *" required>
+                                        <p ng-show="userFeedbackForm.subject.$invalid && !userFeedbackForm.subject.$pristine" class="help-block">You subject is required.</p>
+                                    </div>
+                                    <!-- MESSAGE-->
+                                    <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.message.$invalid && !userFeedbackForm.message.$pristine }">
+                                        <textarea name="message" class="form-control" ng-model="userFeedback.feedbackMessage" placeholder="Message *" required></textarea>
+                                        <p ng-show="userFeedbackForm.message.$invalid && !userFeedbackForm.message.$pristine" class="help-block">You message is required.</p>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary" ng-disabled="userFeedbackForm.$invalid">Submit</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6 wow fadeInUp">
+                                <h2 style="margin-top: 0px;">Contact</h2>
+                                <div>
+                                    <ul class="contact-info-list">
+                                      <li> <i class="fa fa-phone"></i> 9940041313</li>
+                                      <li> <i class="fa fa-envelope-o"></i> you@usnisa.in</li>
+                                      <li> <i class="fa fa-map-marker"></i> 36, Tilak Street T. Nagar Chennai, Tamil Nadu 600017 India</li>
+                                    </ul>
+                                </div>  
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.807300030201!2d80.23285171437621!3d13.047934590805829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52665835640669%3A0x3384f90f238c7116!2s36%2C+Tilak+St%2C+Parthasarathi+Puram%2C+T+Nagar%2C+Chennai%2C+Tamil+Nadu+600017!5e0!3m2!1sen!2sin!4v1477134048575" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; USNISA.IN 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/usnisa.in/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/company/usnisa-consulting-llp" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><p>Designed by <a rel="nofollow" target="_blank" href="http://kirangorad.com/">usnisa.in</a></p>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+    <!-- END SCROLL TOP BUTTON -->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/wow.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+   
+    <script type="text/javascript">
+        $(document).ready(function(){
+            console.log();
+            $(".place-name").html("Strret");
+        });
+    </script>
+</body>
+
+</html>

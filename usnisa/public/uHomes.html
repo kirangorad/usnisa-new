@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>USNISA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Angular library -->
+    <script src="js/angular.min.js"></script>
+    <!-- <script src="js/angular-cookies.min.js"></script> -->
+    <!-- Angular Controller -->
+    <script src="controllers/listingsController.js"></script>
+    <!-- Application Configurations -->
+    <script src="controllers/config.js"></script>
+
+</head>
+
+<body id="page-top" class="index" ng-controller="listingsController">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html#page-top"><img src="img/usnisaAssets/Usnisa-Logo-200-80_yellow.png" height="100%"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#page-top">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#about">About</a>
+                    </li>
+                    <li class="active dropdown">
+                        <a class="dropdown-toggle page-scroll" data-toggle="dropdown" href="index.html#services">Our Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">                
+                            <li><a class="page-scroll" href="uHomes.html">Managed home rentals</a></li>
+                            <li><a class="page-scroll" href="uAssets.html">Property management</a></li>
+                            <li><a class="page-scroll" href="uSocial.html">Social media management</a></li>
+                            <li><a class="page-scroll" href="uRealtor.html">Brokerage</a></li>
+                        </ul>
+                        <!--<a class="page-scroll" href="#services">Our Services</a>-->
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#our-team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+     <!-- Header -->
+    <header id="u-homes">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in wow fadeInUp">Welcome To U-HOMES</div>
+                <h2 class="wow fadeInUp">We offer fully furnished homes for rent near every ITES corridor in Chennai with affordable rentals with zero brokerage and one month security deposit only</h2>
+                <a href="#step-ssection" class="page-scroll btn btn-xl wow fadeInUp">FIND MORE</a>
+            </div>
+        </div>
+    </header>
+    <section id="step-ssection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="title-area">
+                    <h2 class="title">START HASSLE FREE LIVING IN FOUR SIMPLE STEPS</h2>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="feature-content">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-6">
+                            <div class="single-feature no-fixed-hight wow zoomIn">
+                              <i class="fa fa-phone feature-icon"></i>
+                              <h4 class="feat-title">Call Us</h4>
+                              <span class="feature-line"></span>
+                              <h4>Call us to schedule your home visits</h4>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="single-feature no-fixed-hight wow zoomIn">
+                              <i class="fa fa-car feature-icon"></i>
+                              <h4 class="feat-title">Visit</h4>
+                              <span class="feature-line"></span>
+                              <h4>Visit U-Homes of your choice</h4>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-sm-6">
+                            <div class="single-feature no-fixed-hight wow zoomIn">
+                              <i class="fa fa-file-text feature-icon"></i>
+                              <h4 class="feat-title">Book</h4>
+                              <span class="feature-line"></span>
+                              <h4>Book your fully furnished stay by paying token advance</h4>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-3 col-sm-6">
+                            <div class="single-feature no-fixed-hight wow zoomIn">
+                              <i class="fa fa-truck feature-icon"></i>
+                              <h4 class="feat-title">Move-in</h4>
+                              <span class="feature-line"></span>
+                              <h4>Move-in as our guest and just PLUG AND PLAY*</h4>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div>
+                    <h5>
+                        * Why plug and play: You get a fully functional package of WiFi internet, TV with DTH, Washing Machine, Refrigerator, AC, individual cot with mattress and more importantly our lovely and like minded flat-mates at no additional effort.
+                    </h5    >
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="list-type1">
+                        <ol>
+                            <li class="wow fadeInUp"><a href="">CALL US TO SCHEDULE YOUR HOME VISITS</a></li>
+                            <li class="wow fadeInUp"><a href="">VISIT U-HOMES OF YOUR CHOICE</a></li>
+                            <li class="wow fadeInUp"><a href="">BOOK YOUR FULLY FURNISHED STAY BY PAYING TOKEN ADVANCE</a></li>
+                            <li class="wow fadeInUp"><a href="">MOVE-IN AS OUR GUEST AND JUST PLUG AND PLAY*</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wow fadeInUp">
+                        <p>
+                            * Why plug and play: You get a fully functional package of WiFi internet, TV with DTH, Washing Machine, Refrigerator, AC, individual cot with mattress and more importantly our lovely and like minded flat-mates at no additional effort.
+                        </p>
+                        <p>
+                            For homeowners interested to convert your apartment as a U-Home for a best in class property management, a verified tenant base and an additional return on your investment property. Call us @ 98417 42882 or email us at owners@usnisa.in.
+                        </p>
+                    </div>
+                    <div class="list-type3 wow fadeInUp">
+                        <ol>
+                            <li><a href="#">Call us @ 98417 42882 and welcome on board</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>  
+            -->  
+        </div>
+    </section>
+    <!-- Start Properties  -->
+  <section id="aa-properties">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <h2>
+                        Call us @ <a>9940041313</a> and welcome on board
+                    </h2>
+                    <h3>
+                       For homeowners interested to convert your apartment as a U-Home for a best in class property management, a verified tenant base and an additional return on your investment property - Call us @ <a>9940041313</a> or email us at 
+                       <a href="mailto:owners@usnisa.in"> owners@usnisa.in</a>. 
+                    </h3>
+                </div>
+            </div>
+        </div>
+      <!--  
+      <div class="row">
+        <div class="col-md-12" id="properties-list" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+            
+            <div class="col-md-3" ng-repeat="latestProperty in latestProperties">
+              <article class="aa-properties-item wow fadeInUp">
+                <a href="#" class="aa-properties-item-img">
+                  <img ng-src="{{latestProperty.propertyPictures[0]}}" alt="latestPropertyImage">
+                </a>
+                <div class="aa-tag for-{{latestProperty.propertyType}}">
+                  For {{latestProperty.propertyType}}
+                </div>
+                <div class="aa-properties-item-content">
+                  <div class="aa-properties-info">
+                   
+                    <span>{{latestProperty.propertyArea}}</span>
+                    <span>{{latestProperty.propertyCity}}</span>
+                  </div>
+                  <div class="aa-properties-about">
+                    <h3><a href="#">{{latestProperty.propertyName}}</a></h3>
+                    <p>{{latestProperty.propertyDescription}}</p>                      
+                  </div>
+                  <div class="aa-properties-detial">
+                    <span class="aa-price">
+                        ₹ {{latestProperty.propertyCost}}
+                    </span>
+                    <a href="#" class="aa-secondary-btn">View Details</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+        </div>
+        
+      </div>-->
+    </div>
+  </section>
+  <!-- / Properties  -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; USNISA.IN 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="https://www.facebook.com/usnisa.in/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/company/usnisa-consulting-llp" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><p>Designed by <a rel="nofollow" target="_blank" href="http://kirangorad.com/">usnisa.in</a></p>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
+    <!-- END SCROLL TOP BUTTON -->
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/wow.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script>
+    
+    
+</body>
+
+</html>
