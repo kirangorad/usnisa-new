@@ -2,10 +2,10 @@ var appHome = angular.module('myApp', ['app.config']);
 
 appHome.controller('listingsController' , ['$scope','$http', 'app.config',function($scope, $http, config) {
 
-	console.log("This is message from prperty controller",config.basePath);
+	console.log("This is message from listing controller",config.basePath);
 
 	
-	
+	/*
 	$http({
 		method: 'GET',
 		url: config.basePath + '/list/',
@@ -18,7 +18,17 @@ appHome.controller('listingsController' , ['$scope','$http', 'app.config',functi
 		.error(function (error, status){
 			console.log(error, status); 
 		});
-		
-	
+		*/
+	$http({
+		method: 'GET',
+		url: config.basePath + '/blog/',
+		//data: $scope.login,
+		//withCredentials: true
+		}).success(function(response) {
+			$scope.blogs = response;
+		})
+		.error(function (error, status){
+			console.log(error, status); 
+		});
 
 }]);

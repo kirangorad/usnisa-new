@@ -253,6 +253,9 @@ header#u-social{
 header#u-realtor{
   background-image: url('../img/realtor-BW.jpg');  
 }
+header#blog-header{
+  background-image: url('../img/blog-BW.jpg');  
+}
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
@@ -601,9 +604,7 @@ section#contact .form-group input,
 section#contact .form-group textarea {
   padding: 20px;
 }
-section#contact .form-group input.form-control {
-  height: auto;
-}
+
 section#contact .form-group textarea.form-control {
   height: 236px;
 }
@@ -1503,6 +1504,7 @@ section#aa-properties .section-heading {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  color: rgb(0,0,0);
 }
 .aa-properties-item:hover {
   box-shadow: 1px 2px 5px 3px #ccc;

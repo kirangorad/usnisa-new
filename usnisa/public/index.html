@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
     <!-- Animate css -->
     <link rel="stylesheet" type="text/css" href="css/animate.css"/> 
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+   
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -85,6 +85,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#our-team">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="blog.html">Blog</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -340,47 +343,45 @@
             </div>
             <div class="row ">
                 <div class="col-lg-12 wow fadeInUp">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <form class="contactform" name="userFeedbackForm" ng-submit="submitFeedBackForm()" novalidate>
-                                    <p class="form-group" ng-bind="headerFB"></p>
-                                    <!-- NAME -->
-                                    <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.name.$invalid && !userFeedbackForm.name.$pristine }">
-                                        <input type="text" name="name" class="form-control" ng-model="userFeedback.feedbackName" placeholder="Name *" required>
-                                        <p ng-show="userFeedbackForm.name.$invalid && !userFeedbackForm.name.$pristine" class="help-block">You name is required.</p>
-                                    </div>
-                                    <!-- EMAIL -->
-                                    <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.email.$invalid && !userFeedbackForm.email.$pristine }">
-                                        <input type="email" name="email" class="form-control" ng-model="userFeedback.feedbackEmail" placeholder="Email">
-                                        <p ng-show="userFeedbackForm.email.$invalid && !userFeedbackForm.email.$pristine" class="help-block">Enter a valid email.</p>
-                                    </div>
-                                    <!-- SUBJECT -->
-                                    <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.subject.$invalid && !userFeedbackForm.subject.$pristine }">
-                                        <input type="text" name="subject" class="form-control" ng-model="userFeedback.feedbackSubject" placeholder="Subject *" required>
-                                        <p ng-show="userFeedbackForm.subject.$invalid && !userFeedbackForm.subject.$pristine" class="help-block">You subject is required.</p>
-                                    </div>
-                                    <!-- MESSAGE-->
-                                    <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.message.$invalid && !userFeedbackForm.message.$pristine }">
-                                        <textarea name="message" class="form-control" ng-model="userFeedback.feedbackMessage" placeholder="Message *" required></textarea>
-                                        <p ng-show="userFeedbackForm.message.$invalid && !userFeedbackForm.message.$pristine" class="help-block">You message is required.</p>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary" ng-disabled="userFeedbackForm.$invalid">Submit</button>
-                                </form>
-                            </div>
-                            <div class="col-md-6 wow fadeInUp">
-                                <h2 style="margin-top: 0px;">Contact</h2>
-                                <div>
-                                    <ul class="contact-info-list">
-                                      <li> <i class="fa fa-phone"></i> 9940041313</li>
-                                      <li> <i class="fa fa-envelope-o"></i> you@usnisa.in</li>
-                                      <li> <i class="fa fa-map-marker"></i> 36, Tilak Street T. Nagar Chennai, Tamil Nadu 600017 India</li>
-                                    </ul>
-                                </div>  
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.807300030201!2d80.23285171437621!3d13.047934590805829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52665835640669%3A0x3384f90f238c7116!2s36%2C+Tilak+St%2C+Parthasarathi+Puram%2C+T+Nagar%2C+Chennai%2C+Tamil+Nadu+600017!5e0!3m2!1sen!2sin!4v1477134048575" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <form class="contactform" name="userFeedbackForm" ng-submit="submitFeedBackForm()" novalidate>
+                                <p class="form-group" ng-bind="headerFB"></p>
+                                <!-- NAME -->
+                                <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.name.$invalid && !userFeedbackForm.name.$pristine }">
+                                    <input type="text" name="name" class="form-control" ng-model="userFeedback.feedbackName" placeholder="Name *" required>
+                                    <p ng-show="userFeedbackForm.name.$invalid && !userFeedbackForm.name.$pristine" class="help-block">You name is required.</p>
+                                </div>
+                                <!-- EMAIL -->
+                                <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.email.$invalid && !userFeedbackForm.email.$pristine }">
+                                    <input type="email" name="email" class="form-control" ng-model="userFeedback.feedbackEmail" placeholder="Email">
+                                    <p ng-show="userFeedbackForm.email.$invalid && !userFeedbackForm.email.$pristine" class="help-block">Enter a valid email.</p>
+                                </div>
+                                <!-- SUBJECT -->
+                                <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.subject.$invalid && !userFeedbackForm.subject.$pristine }">
+                                    <input type="text" name="subject" class="form-control" ng-model="userFeedback.feedbackSubject" placeholder="Subject *" required>
+                                    <p ng-show="userFeedbackForm.subject.$invalid && !userFeedbackForm.subject.$pristine" class="help-block">You subject is required.</p>
+                                </div>
+                                <!-- MESSAGE-->
+                                <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.message.$invalid && !userFeedbackForm.message.$pristine }">
+                                    <textarea name="message" class="form-control" ng-model="userFeedback.feedbackMessage" placeholder="Message *" required></textarea>
+                                    <p ng-show="userFeedbackForm.message.$invalid && !userFeedbackForm.message.$pristine" class="help-block">You message is required.</p>
+                                </div>
+                                <button type="submit" class="btn btn-primary" ng-disabled="userFeedbackForm.$invalid">Submit</button>
+                            </form>
                         </div>
-                    </form>
+                        <div class="col-md-6 wow fadeInUp">
+                            <h2 style="margin-top: 0px;">Contact</h2>
+                            <div>
+                                <ul class="contact-info-list">
+                                  <li> <i class="fa fa-phone"></i> 9940041313</li>
+                                  <li> <i class="fa fa-envelope-o"></i> you@usnisa.in</li>
+                                  <li> <i class="fa fa-map-marker"></i> 36, Tilak Street T. Nagar Chennai, Tamil Nadu 600017 India</li>
+                                </ul>
+                            </div>  
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.807300030201!2d80.23285171437621!3d13.047934590805829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52665835640669%3A0x3384f90f238c7116!2s36%2C+Tilak+St%2C+Parthasarathi+Puram%2C+T+Nagar%2C+Chennai%2C+Tamil+Nadu+600017!5e0!3m2!1sen!2sin!4v1477134048575" width="100%" height="375" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -32,7 +32,7 @@ appHome.controller('mainController' , ['$scope','$http', 'app.config',function($
 						$scope.headerFB = "Thank you for your valuable feedback";
 						$scope.userFeedback = {};
 						//$scope.submitFeedBackForm.$setUntouched();
-						$scope.submitFeedBackForm.$setPristine();
+						//$scope.submitFeedBackForm.$setPristine();
 					}	
 				})
 				.error(function (error, status, xhr){
