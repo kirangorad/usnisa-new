@@ -1,6 +1,6 @@
-//var baseURL = 'http://usnisa.in';
+var baseURL = 'http://usnisa.in:8000';
 //var baseURL = 'http://52.66.21.137';
-var baseURL = 'http://localhost:8000';
+//var baseURL = 'http://localhost:8000';
 
 // Module specific configuration
 angular.module('app.config',[])
