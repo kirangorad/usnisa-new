@@ -58,7 +58,7 @@ function sendMails(feedbackToAdd) {
 	// setup email data with unicode symbols
 	let mailOptionsUser = {
 	    from: '"kirangorad4u@gmail.com', // sender address
-	    to: 'kirangorad4u@gmail.com, kiran.gorad@yahoo.in', // list of receivers
+	    to: 'kirangorad4u@gmail.com, you@usnisa.in', // list of receivers
 	    subject: 'USNISA -  Thank you for Enquiry', // Subject line
 	    text: 'Hello world ?', // plain text body
 	    html: '<h3>Thank you very much for your query</h3> <h4>We will get back to you soon</h4> <a href="usnisa.in">USNISA</a>' // html body
