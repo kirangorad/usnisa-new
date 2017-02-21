@@ -26,18 +26,24 @@ appHome.controller('mainController' , ['$scope','$http', 'app.config',function($
 
 			// check to make sure the form is completely valid
 			if ($scope.userFeedbackForm.$valid) {
-				
-				$http.post( config.basePath + '/fback', $scope.userFeedback).success(function(response,status,header) {
-					if(response.status == 200) {
+				console.log('feedback called');
+				$http({
+					method: 'POST',
+					url: config.basePath + '/fback/',
+					data: $scope.userFeedback,
+					//withCredentials: true
+					}).success(function(response) {
+						console.log(response);
 						$scope.headerFB = "Thank you for your valuable feedback";
 						$scope.userFeedback = {};
 						//$scope.submitFeedBackForm.$setUntouched();
-						//$scope.submitFeedBackForm.$setPristine();
-					}	
-				})
-				.error(function (error, status, xhr){
-					console.log(error, status, xhr); 
-				});
+						$scope.userFeedbackForm.$setPristine();
+					})
+					.error(function (error, status){
+						console.log(error, status); 
+					});
+
+				
 			}
 
 		};
