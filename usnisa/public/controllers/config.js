@@ -1,4 +1,4 @@
-var baseURL = 'http://usnisa.in:8000';
+var baseURL = 'http://usnisa.in';
 //var baseURL = 'http://localhost:8000';
 
 // Module specific configuration
