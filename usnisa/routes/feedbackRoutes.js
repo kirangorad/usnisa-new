@@ -8,8 +8,8 @@ var router = express.Router();
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'kirangorad4u@gmail.com',
-        pass: 'connoisseur'
+        user: 'usnisa.web@gmail.com',
+        pass: 'Nodejs@ajs'
     }
 });
 
@@ -35,8 +35,8 @@ function sendMails(feedbackToAdd) {
 
 	// setup email data with unicode symbols
 	let mailOptionsAdmin = {
-	    from: '"kirangorad4u@gmail.com', // sender address
-	    to: 'kirangorad4u@gmail.com, kiran.gorad@yahoo.in', // list of receivers
+	    from: 'usnisa.web@gmail.com', // sender address
+	    to: feedbackToAdd.feedbackEmail, // list of receivers
 	    subject: 'USNISA -  New Enquiry', // Subject line
 	    //text: 'Please Find the detals below', // plain text body
 	    html: 	'<h3>There is a new enquiry</h3>'+
@@ -57,7 +57,7 @@ function sendMails(feedbackToAdd) {
 	
 	// setup email data with unicode symbols
 	let mailOptionsUser = {
-	    from: '"kirangorad4u@gmail.com', // sender address
+	    from: 'usnisa.web@gmail.com', // sender address
 	    to: 'kirangorad4u@gmail.com, you@usnisa.in', // list of receivers
 	    subject: 'USNISA -  Thank you for Enquiry', // Subject line
 	    text: 'Hello world ?', // plain text body
