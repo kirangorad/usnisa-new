@@ -36,7 +36,7 @@ function sendMails(feedbackToAdd) {
 	// setup email data with unicode symbols
 	let mailOptionsAdmin = {
 	    from: 'usnisa.web@gmail.com', // sender address
-	    to: feedbackToAdd.feedbackEmail, // list of receivers
+	    to: 'kirangorad4u@gmail.com, you@usnisa.in', // list of receivers
 	    subject: 'USNISA -  New Enquiry', // Subject line
 	    //text: 'Please Find the detals below', // plain text body
 	    html: 	'<h3>There is a new enquiry</h3>'+
@@ -58,7 +58,7 @@ function sendMails(feedbackToAdd) {
 	// setup email data with unicode symbols
 	let mailOptionsUser = {
 	    from: 'usnisa.web@gmail.com', // sender address
-	    to: 'kirangorad4u@gmail.com, you@usnisa.in', // list of receivers
+	    to: feedbackToAdd.feedbackEmail, // list of receivers
 	    subject: 'USNISA -  Thank you for Enquiry', // Subject line
 	    text: 'Hello world ?', // plain text body
 	    html: '<h3>Thank you very much for your query</h3> <h4>We will get back to you soon</h4> <a href="usnisa.in">USNISA</a>' // html body
