@@ -40,7 +40,7 @@ function sendMails(feedbackToAdd) {
 	    subject: 'USNISA -  New Enquiry', // Subject line
 	    //text: 'Please Find the detals below', // plain text body
 	    html: 	'<h3>There is a new enquiry</h3>'+
-	    		'<h4>Please find the detals below</h4>'+
+	    		'<h4>Please find the details below</h4>'+
 	    	  	'<br/><b>Name :</b>' + feedbackToAdd.feedbackName +
 	    	  	'<br/><b>Email :</b>' + feedbackToAdd.feedbackEmail +
 	    	  	'<br/><b>Subject :</b>' + feedbackToAdd.feedbackSubject +
