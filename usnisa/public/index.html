@@ -264,7 +264,7 @@
                                   <li> <i class="fa fa-map-marker"></i> 36, Tilak Street T. Nagar Chennai, Tamil Nadu 600017 India</li>
                                 </ul>
                             </div>  
-                            <div id="map"></div>
+                            <div id="map" style="height: 325px;"></div>
                         </div>
                     </div>
                 </div>
@@ -316,9 +316,11 @@
     
     <script>
       function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
+        var uluru = {lat: 13.0477246, lng: 80.1658135};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 12,
+          fullscreenControl: true,
+          
           center: uluru
         });
         var marker = new google.maps.Marker({
