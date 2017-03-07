@@ -264,7 +264,7 @@
                                   <li> <i class="fa fa-map-marker"></i> 36, Tilak Street T. Nagar Chennai, Tamil Nadu 600017 India</li>
                                 </ul>
                             </div>  
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.807300030201!2d80.23285171437621!3d13.047934590805829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52665835640669%3A0x3384f90f238c7116!2s36%2C+Tilak+Street%2C+Parthasarathi+Puram%2C+T+Nagar%2C+Chennai%2C+Tamil+Nadu+600017!5e0!3m2!1sen!2sin!4v1477134048575" width="100%" height="325" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div id="map"></div>
                         </div>
                     </div>
                 </div>
@@ -310,11 +310,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <script src="js/wow.js"></script>
-    
+
     <!-- Theme JavaScript -->
     <script src="js/agency.js" async></script>
     
-   
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwtQYS7Mnhl4F_eEG97E10KRzyUd3bDMU&callback=initMap">
+    </script>
 </body>
 
 </html>
