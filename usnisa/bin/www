@@ -8,11 +8,12 @@ var app = require('../app');
 var debug = require('debug')('usnisa:server');
 var http = require('http');
 var https = require('https');
-var httpsRedirect = require('express-https-redirect');
+//var httpsRedirect = require('express-https-redirect');
+var forceSSL = require('express-force-ssl');
 
 
-app.use('/', httpsRedirect());
-
+//app.use('/', httpsRedirect());
+app.use(forceSSL);
 
 var ssl_options = {
    key  : fs.readFileSync('../cert/usnisa-key.pem'),
