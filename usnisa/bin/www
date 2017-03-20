@@ -12,6 +12,14 @@ var https = require('https');
 var forceSSL = require('express-force-ssl');
 
 
+app.set('forceSSLOptions', {
+  enable301Redirects: true,
+  trustXFPHeader: false,
+  httpsPort: 443,
+  sslRequiredMessage: 'SSL Required.'
+});
+
+
 //app.use('/', httpsRedirect());
 app.use(forceSSL);
 
