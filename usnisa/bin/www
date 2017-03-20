@@ -3,10 +3,29 @@
 /**
  * Module dependencies.
  */
-
+var fs = require('fs');
 var app = require('../app');
 var debug = require('debug')('usnisa:server');
 var http = require('http');
+var https = require('https');
+var httpsRedirect = require('express-https-redirect');
+
+
+app.use('/', httpsRedirect());
+
+
+var ssl_options = {
+   key  : fs.readFileSync('../cert/usnisa-key.pem'),
+   cert : fs.readFileSync('../cert/cbd2188a8e18cc6f.crt'),
+   ca : fs.readFileSync('../cert/gd_bundle-g2-g1.crt')
+};
+
+/**
+ * Create HTTPS server.
+ */
+
+var serverSSL = https.createServer(ssl_options,app).listen(443);
+
 
 /**
  * Get port from environment and store in Express.
