@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="usnisa.in is a broad based offline to online (O2O) services company. Our principle operations are in real estate and in social media management">
     <meta name="author" content="">
-
-    <title>USNISA Online | Attract. Engage. Convert. Delight</title>
+    <meta keyword="USNISA Online Solutions">
+    <title>USNISA Online Solutions | Attract. Engage. Convert. Delight</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -112,7 +112,7 @@
     <header id="u-main">
         <div class="container">
             <div class="intro-text">
-                <h1 class="intro-lead-in wow fadeInUp">Welcome To USNISA</h1>
+                <h1 class="intro-lead-in wow fadeInUp">Welcome To USNISA Online Solutions</h1>
                 <h2 class="intro-heading wow fadeInUp">ATTRACT. ENGAGE. CONVERT. DELIGHT</h2>
                 <a href="#about" class="page-scroll btn btn-xl wow fadeInUp">Tell Me More</a>
             </div>
@@ -237,6 +237,11 @@
                                     <input type="text" name="name" class="form-control" ng-model="userFeedback.feedbackName" placeholder="Name *" required>
                                     <span ng-show="userFeedbackForm.name.$invalid && !userFeedbackForm.name.$pristine" class="fa fa-info-circle errspan"></span>
                                 </div>
+                                <!-- Mobile No -->
+                                <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.phone.$invalid && !userFeedbackForm.phone.$pristine }">
+                                    <input type="number" name="phone" class="form-control" ng-minlength="10" ng-maxlength="10" ng-model="userFeedback.feedbackPhone" placeholder="Mobile">
+                                    <span ng-show="userFeedbackForm.phone.$invalid && !userFeedbackForm.phone.$pristine" class="fa fa-info-circle errspan"></span>
+                                </div>
                                 <!-- EMAIL -->
                                 <div class="form-group" ng-class="{ 'has-error' : userFeedbackForm.email.$invalid && !userFeedbackForm.email.$pristine }">
                                     <input type="email" name="email" class="form-control" ng-model="userFeedback.feedbackEmail" placeholder="Email">
@@ -264,7 +269,7 @@
                                   <li> <i class="fa fa-map-marker"></i> 36, Tilak Street T. Nagar Chennai, Tamil Nadu 600017 India</li>
                                 </ul>
                             </div>  
-                            <div id="map" style="height: 325px;"></div>
+                            <div id="map" style="height: 390px;"></div>
                         </div>
                     </div>
                 </div>
@@ -288,11 +293,19 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=0j6FHdj1eLMXbsInkEwwmRom0Krl6wSw6lbz7UxXcsKEuQzpz2tr68ck96oG"></script></span>
-                        </li>
-                        <li><p>Designed by <a target="_blank" href="http://kirangorad.com/">usnisa.in</a></p>
+                        <li><p>Designed by <a target="_blank" href="https://www.usnisa.in/">USNISA Online Solutions</a></p>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="trust-seals" style="margin-top: 15px">
+                  <div class="col-md-12">
+                      <ul class="list-inline quicklinks">
+                          <li><span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=0j6FHdj1eLMXbsInkEwwmRom0Krl6wSw6lbz7UxXcsKEuQzpz2tr68ck96oG"></script></span>
+                          </li>
+                      </ul>
+                  </div>
                 </div>
             </div>
         </div>

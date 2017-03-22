@@ -5,6 +5,7 @@ var Schema = mongoose.Schema;
 // create a schema
 var feedbackSchema = new Schema({
   feedbackName: { type: String, required: true },
+  feedbackPhone: { type: String, required: true },
   feedbackEmail: { type: String, required: true },
   feedbackSubject: { type: String, required: true },
   feedbackMessage: { type: String, required: true },

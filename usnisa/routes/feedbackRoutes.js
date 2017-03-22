@@ -42,6 +42,7 @@ function sendMails(feedbackToAdd) {
 	    html: 	'<h3>There is a new enquiry</h3>'+
 	    		'<h4>Please find the details below</h4>'+
 	    	  	'<br/><b>Name :</b>' + feedbackToAdd.feedbackName +
+	    	  	'<br/><b>Phone :</b>' + feedbackToAdd.feedbackPhone +
 	    	  	'<br/><b>Email :</b>' + feedbackToAdd.feedbackEmail +
 	    	  	'<br/><b>Subject :</b>' + feedbackToAdd.feedbackSubject +
 	    	  	'<br/><b>Message :</b>' + feedbackToAdd.feedbackMessage 
@@ -61,7 +62,7 @@ function sendMails(feedbackToAdd) {
 	    to: feedbackToAdd.feedbackEmail, // list of receivers
 	    subject: 'USNISA -  Thank you for Enquiry', // Subject line
 	    text: 'Hello world ?', // plain text body
-	    html: '<h3>Thank you very much for your query</h3> <h4>We will get back to you soon</h4> <a href="usnisa.in">USNISA</a>' // html body
+	    html: '<h3>Thank you very much for your query</h3> <h4>We will get back to you soon</h4> <a href="https://usnisa.in">USNISA</a>' // html body
 	};
 
 	// send mail with defined transport object
@@ -89,6 +90,7 @@ module.exports = function(passport) {
 		
 			var feedbackToAdd = new Feedback();
 			feedbackToAdd.feedbackName = req.body.feedbackName;
+			feedbackToAdd.feedbackPhone = req.body.feedbackPhone;
 			feedbackToAdd.feedbackEmail = req.body.feedbackEmail;
 			feedbackToAdd.feedbackSubject = req.body.feedbackSubject;
 			feedbackToAdd.feedbackMessage = req.body.feedbackMessage;
