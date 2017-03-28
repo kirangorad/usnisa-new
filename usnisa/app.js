@@ -31,8 +31,8 @@ var app = express();
 app.use(compression());
 
 // view engine setup
-app.set('views', path.join(__dirname, 'public'));
-app.set('view engine', 'ejs');
+//app.set('views', path.join(__dirname, 'public'));
+//app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -67,7 +67,14 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/', routes);
+
+
+//To handle the post request to root
+app.post("/", function(req, res) {
+  res.redirect('/');
+});
+
+//app.use('/', routes);
 app.use('/auth', authRoutes);
 app.use('/list', listingsRoutes);
 app.use('/fback', feedbackRoutes);
