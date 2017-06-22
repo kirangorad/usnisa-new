@@ -26,7 +26,7 @@
 
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    
     <!-- Animate css -->
     <link rel="stylesheet" type="text/css" href="css/animate.css"/> 
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -130,9 +130,11 @@
             
             <div class="col-md-4" ng-repeat="blog in blogs">
               <article class="aa-properties-item wow fadeInUp">
-                <a href="#" class="aa-properties-item-img">
-                  <img ng-src="{{blog.blogPictures[0]}}" alt="latestBlogImage">
-                </a>
+                
+                    <div style="height: 200px; width: 100%; overflow: hidden;">
+                        <img style="width: 100%" ng-src="{{blog.blogPictures[0]}}" alt="latestBlogImage">
+                    </div>
+                
                 <div class="aa-tag for-Rent">
                   {{blog.blogDate}}
                 </div>
